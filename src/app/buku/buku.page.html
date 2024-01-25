@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="light">
+    <ion-title>Raudatun Nisa - 2201301168</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Data Buku
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list lines="full">
+    <ion-button type="button" [routerLink]="['/buku-create']" routerLinkActive="router-link-active" color="success" expand="block">
+        Tambah Buku
+    </ion-button>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>List Data Buku</ion-list-header>
+  </ion-list>
+  <ion-card lines="inset" *ngFor="let buku_value of buku">
+    
+  </ion-card>
+</ion-content>
